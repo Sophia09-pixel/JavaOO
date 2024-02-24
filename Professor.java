@@ -15,14 +15,12 @@ public class Professor {
 	}
 	
 	public double calculaAdicional() {
-		double remuneracaoTotal =0;
 		adicionalHoraAtividade = salarioBase * 0.5;
-		remuneracaoTotal = salarioBase + adicionalHoraAtividade;
-		return remuneracaoTotal;
+		return adicionalHoraAtividade;
 	}
 	
-	public double calculaDescanso(double remuneracaoTotal) {
-		descansaSemanalRemunerado = remuneracaoTotal / 6;
+	public double calculaDescanso() {
+		descansaSemanalRemunerado = (salarioBase+adicionalHoraAtividade)/ 6;
 		return descansaSemanalRemunerado;
 	}
 	
