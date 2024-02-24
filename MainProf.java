@@ -24,15 +24,14 @@ public class MainProf {
 			System.out.print("Digite o valor da hora-aula: ");
 			professor.horaAula = entrada.nextDouble();
 
-			professor.calculaSalarioBase();
-			professor.calculaAdicional();
-			professor.calculaDescanso(i);
+			System.out.println("Salário Base: R$"+professor.calculaSalarioBase());
+			System.out.println("Adicional: R$"+professor.calculaAdicional());
+			System.out.println("Descanso Remunerado: R$"+professor.calculaDescanso());
 
 			System.out.println("Salário Bruto do Professor(a): " + professor.Nome + " R$"
 					+ String.format("%.2f", professor.getSalarioBruto()));
 			System.out.println();
 		}
-
 	}
-
 }
+
