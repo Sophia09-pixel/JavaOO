@@ -1,2 +1,2 @@
 # JavaOO
-Desafio para praticar Java com orientação a objetos
+Aplicando os conceitos de orientação a objetos em exercícios
